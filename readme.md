@@ -65,20 +65,6 @@ You will learn:
 
 ---
 
-# 📁 Project Structure
-
-```bash
-project-root/
-│── client/
-│── server/
-│── nginx/
-│── instructions/
-│── docker-compose.yml
-│── README.md
-```
-
----
-
 # 📚 Daily Instructions
 
 Each day of the course has its own detailed guide.
