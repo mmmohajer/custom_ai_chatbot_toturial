@@ -1,0 +1,15 @@
+services:
+  client:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run dev
